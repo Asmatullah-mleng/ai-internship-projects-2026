@@ -27,7 +27,9 @@ The application accepts these measurements in centimeters:
 ```text
 Project-02-knn-iris-classifier/
 |-- app.py                    # Streamlit prediction interface
+|-- README.md                 # Project documentation
 |-- requirement.txt           # Python dependencies
+|-- .gitignore                # Git ignore rules
 |-- models/
 |   |-- knn_iris_model.pkl    # Trained KNN model
 |   |-- scaler.pkl            # Fitted feature scaler
@@ -36,7 +38,8 @@ Project-02-knn-iris-classifier/
 |-- src/
 |   |-- train_model.py        # Training and artifact generation
 |   |-- predict.py            # Command-line prediction example
-|-- results/                  # Generated analysis output
+|   |-- evaluation.py         # Model evaluation and confusion matrix
+|-- results/                  # Generated evaluation output
 ``` 
 
 ## Getting Started
@@ -103,6 +106,16 @@ python src/predict.py
 ```
 
 The example predicts the species for a flower with measurements `[5.1, 3.5, 1.4, 0.2]`.
+
+## Evaluate the Model
+
+Run the evaluation script to calculate accuracy, print a classification report, and create a confusion matrix:
+
+```bash
+python src/evaluation.py
+```
+
+The evaluation report and confusion matrix are saved in the `results/` directory.
 
 ## Machine Learning Workflow
 
