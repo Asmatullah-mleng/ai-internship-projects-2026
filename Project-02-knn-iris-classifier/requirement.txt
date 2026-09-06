@@ -1,0 +1,9 @@
+# Numerical computing and model persistence
+numpy==2.3.5
+joblib==1.5.2
+
+# Machine learning
+scikit-learn==1.7.2
+
+# Web application
+streamlit==1.51.0
